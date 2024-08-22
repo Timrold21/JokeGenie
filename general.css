@@ -1,0 +1,325 @@
+/* Base Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('./ASSET/minions.gif');
+    background-size: cover;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+.navbar {
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+#navbar__logo {
+    background: linear-gradient(to top, #ff0844 0%, #ffb199 100%);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.navbar__toggle {
+    display: none;
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: #ffb199;
+    transition: all 0.3s ease;
+}
+
+.navbar__btn {
+    display: flex;
+    align-items: center;
+}
+.navbar__btn .button {
+    background-color: #ff6a00;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar__btn .button:hover {
+    background-color: #ee0979;
+    transition: all 0.3s ease;
+}
+.hero {
+    background: url(./image.png);
+    padding: 150px 0;
+    text-align: center;
+}
+
+.hero__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.hero__heading {
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.hero__heading span {
+    background: linear-gradient(to right, #ff6a00, #ee0979);
+    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+.hero__description {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.main__btn {
+    background-color: #ff6a00;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.main__btn a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.main__btn:hover {
+    background-color: #ee0979;
+    transition: all 0.3s ease;
+}
+
+/* Header Styles */
+header {
+    width: 100%;
+    background: rgba(74, 144, 226, 0.9); /* Semi-transparent background */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+/* Main Content Styles */
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+    max-width: 900px;
+}
+
+/* Joke Display Styles */
+#joke-display {
+    margin: 20px 0;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.25rem;
+    line-height: 1.6;
+    max-width: 100%;
+    word-wrap: break-word;
+}
+
+/* Button Container Styles */
+.button-container {
+    margin-top: 40px; /* Bring the buttons down more */
+    width: 100%;
+    max-width: 900px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three buttons per row */
+    gap: 40px; /* More space between buttons */
+}
+
+.button-container .row-2 {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Auto-fit remaining buttons */
+}
+
+/* Style for all buttons */
+button {
+    margin-right: 20px;
+    padding-top: 50px;
+    padding: 30px 45px; /* Larger padding for more emphasis */
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    font-size: 18px; /* Increased font size */
+    transition: background 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    font-family: 'Roboto', sans-serif;
+}
+
+#get-joke { background: #4a90e2; }
+#share-joke { background: #e94e77; }
+#save-joke { background: #ffab40; }
+#joke-of-the-day { background: #50e3c2; }
+#custom-joke { background: orangered; }
+#voice-joke { background: #f5a623; }
+#clear-history { background: #9b9b9b; }
+
+button:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+/* Form Styles */
+#custom-joke-form {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    resize: none;
+}
+
+input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    border: none;
+    background: #4a90e2;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.3s;
+    font-size: 1rem;
+}
+
+input[type="submit"]:hover {
+    background: #357abd;
+}
+
+/* History Styles */
+#history {
+    margin-top: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 600px;
+}
+
+#history-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#history-list li {
+    background: #f9f9f9;
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word;
+}
+
+/* Upvote/Downvote Styles */
+#upvote-downvote {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#upvote-button, #downvote-button {
+    margin: 0 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    background: #ddd;
+    color: #333;
+}
+
+#upvote-count, #downvote-count {
+    font-size: 1.25rem;
+    margin: 0 10px;
+    color: white;
+
+}
+

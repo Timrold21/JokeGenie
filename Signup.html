@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JokeGenie - Sign Up</title>
+    <link rel="stylesheet" href="./Signup.css">
+</head>
+<body>
+    <div class="signup-box">
+        <h1>Sign Up</h1>
+        <form id="signupForm">
+            <label for="FirstName">First Name</label>
+            <input type="text" placeholder="Enter first name" name="FirstName" required>
+
+            <label for="LastName">Last Name</label>
+            <input type="text" placeholder="Enter last name" name="LastName" required>
+
+            <label for="Username">Username</label>
+            <input type="text" placeholder="Enter Username" name="Username" required>
+
+            <label for="Email">Email</label>
+            <input type="email" placeholder="Enter email address" name="Email" required>
+
+            <label for="Password">Password</label>
+            <input type="password" placeholder="Enter password" name="Password" required>
+
+            <button type="submit" class="button">Submit</button>
+        </form>
+        <p class="para">By clicking the Sign Up button, you agree to our <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a></p>
+
+        <p class="para-2">Already have an account? <a href="./Login.html">Login here</a></p>
+    </div>
+    
+
+    <script>
+        document.getElementById('signupForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            // Simulate a successful signup
+            alert('Signup successful! Redirecting to login page.');
+            window.location.href = './Login.html';
+        });
+    </script>
+</body>
+</html>

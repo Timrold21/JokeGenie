@@ -1,0 +1,147 @@
+/* Services Page Specific Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8f9fa;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url(./ASSET/puns.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.navbar {
+    background: #131313;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+.navbar__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1300px;
+    padding: 0 50px;
+}
+
+#navbar__logo {
+    background: linear-gradient(to right, #ff6a00, #ee0979);    background-size: 100%;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+.navbar__toggle {
+    display: none;
+}
+
+.navbar__menu {
+    display: flex;
+    list-style: none;
+    text-align: center;
+}
+
+.navbar__item {
+    height: 80px;
+}
+
+.navbar__links {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+.navbar__links:hover {
+    color: #ffb199;
+    transition: all 0.3s ease;
+}
+
+.navbar__btn {
+    display: flex;
+    align-items: center;
+}
+
+.navbar__btn .button {
+    background-color: #ff6a00;
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.navbar__btn .button:hover {
+    background-color: #ee0979;
+    transition: all 0.3s ease;
+}
+
+.services__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+}
+
+.services__card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 30%;
+    transition: transform 0.3s ease-in-out;
+    text-align: center;
+}
+
+.services__card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.services__card p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    color: #777;
+}
+
+.services__card:hover {
+    transform: translateY(-10px);
+    cursor: pointer;
+}
+
+.services__btn {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.services__btn a {
+    padding: 12px 24px;
+    background-color: #333;
+    color: #fff;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.services__btn a:hover {
+    background-color: #555;
+}

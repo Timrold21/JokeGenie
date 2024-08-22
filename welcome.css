@@ -1,0 +1,133 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+body{
+    background: url(./ASSET/laugh-smiley-emoticon-funny.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: fixed;
+    
+}
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85%;
+    padding:30px 8%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(243, 242, 236, 0.1);
+    
+}
+
+.socials{
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+    height: 40px;
+
+}
+
+.socials a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid yellow;
+    text-decoration: none;
+    transform: rotate(45deg);
+
+
+}
+.socials a i{
+    font-size: 24px;
+    color: white;
+    transform: rotate(-45deg);
+}
+.logo{
+    font-size: 35px;
+    color: yellow;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.navbar a{
+    font-size: 20px;
+    text-decoration: none;
+    font-weight: 500;
+   
+}
+
+
+.home{
+    width: 50%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 50px 8% 0;
+
+     
+}
+
+.home-content{
+    /* background: seagreen; */
+    max-width: 630px;
+}
+
+
+.home-content h1{
+    font-size: 50px;
+    line-height: 1.2;
+    color: white;
+    
+
+}
+
+.home-content h3{
+    font-size: 40px;
+    color:yellow ;
+}
+
+
+.home-content p{
+    font-size: 20px;
+    margin: 15px 0 30px;
+    font-weight: 800;
+    color: white;
+}
+
+
+.btn{
+    display: inline-block;
+    padding: 10px 28px;
+    background: yellow;
+    border: 2px solid yellow;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0 , .1);
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+   
+    
+}
+
+.btn:hover{
+    background: transparent;
+    color: yellow;
+}
+
+@media screen and (min-width: 320px) and (max-width: 1230px) {
+    body{
+        
+    }
+ }

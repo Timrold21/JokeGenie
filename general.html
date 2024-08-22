@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>General Jokes</title>
+    <link rel="stylesheet" href="general.css">
+</head>
+<body>
+    <!-- Navbar Section -->
+    <nav class="navbar">
+        <div class="navbar__container">
+            <a href="index.html" id="navbar__logo">JOKE TELLER</a>
+            <div class="navbar__toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            <ul class="navbar__menu">
+                <li class="navbar__item">
+                    <a href="index.html" class="navbar__links" id="home-page">Home</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="#about-section" class="navbar__links" id="about-page">About</a>
+                </li>
+                <li class="navbar__item">
+                    <a href="services.html" class="navbar__links" id="services-page">Services</a>
+                </li>
+                <li class="navbar__btn">
+                    <a href="contact.html" class="button" id="contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Same as in index.html -->
+
+    </div>
+
+    <!-- Joke Display Section -->
+    <div id="joke-display">Click "Get Joke" to see a joke!</div>
+
+    <!-- Button Container Section -->
+    <div class="joke-container">
+        <div class="row">
+            <button id="get-joke">Get Joke</button>
+            <button id="share-joke">Share Joke</button>
+            <button id="save-joke">Save Joke</button>
+            <button id="joke-of-the-day">Joke of the Day</button>
+            <button id="custom-joke">Custom Joke</button>
+            <button id="voice-joke">Voice Joke</button>
+            <button id="clear-history">Clear History</button>
+        </div>
+    </div>
+
+    <!-- Joke History Section -->
+    <div class="joke-history">
+        <h2 style="color: #fff;">Saved Jokes</h2>
+        <ul id="history-list"></ul>
+    </div>
+
+    <!-- Joke of the Day Section -->
+    <div class="joke-of-the-day">
+        <p id="joke-of-the-day"></p>
+    </div>
+
+    <!-- Custom Jokes Section -->
+    <div class="custom-jokes">
+        <div id="custom-joke-form" style="display: none;">
+            <textarea id="custom-joke-text" placeholder="Write your joke here..."></textarea>
+            <input type="submit" value="Submit Joke" id="submit-custom-joke">
+        </div>
+        <div id="custom-jokes-list"></div>
+    </div>
+    <div id="upvote-downvote">
+        <button id="upvote-button">Upvote</button>
+        <span id="upvote-count">0</span>
+        <button id="downvote-button">Downvote</button>
+        <span id="downvote-count">0</span>
+    </div>
+
+    <!-- Scripts -->
+    <script src="general.js"></script>
+</body>
+</html>

@@ -1,0 +1,124 @@
+body{
+background: url(./ASSET//Happy\ Laughing\ Emoji\ 3D\ wallpaper\,\ Download\ free\ amazing\ High\ Resolution\ backgrounds\ ....jpg);
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+
+
+}
+
+.signup-box{
+    width: 360px;
+    height: 620px;
+    margin: auto;
+    /* background-color:rgba(255, 255, 255, 0.849); */
+    backdrop-filter: blur(8px);
+    border-radius: 10px;
+
+/* NEW CODE */
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    padding: 30px 50px;
+    color: white;
+}
+
+h1{
+    font-size: 50px;
+   text-align: center;
+   /* padding-top: 10px; */
+   margin-top: 10px;
+   color: yellow;
+}
+
+form{
+    width: 300px;
+    margin-left: 20px;
+}
+
+form label{
+    display: flex;
+    margin-top: 20px;
+    font-size: 15px;
+}
+
+form input{
+    width: 100%;
+    padding: 9px;
+    border-radius: 5px;
+    /* border: 1px solid gray; */
+    outline: none;
+    margin-top: 5px;
+
+
+    /* NEW CODE */
+    background: transparent; 
+    border-radius: 40px;
+    border: 2px solid rgba(255, 255, 255, .2);
+
+  
+}
+
+form ::placeholder{
+    color: whitesmoke;
+
+}
+
+
+.button{
+    width: 320px;
+    height: 35px;
+    margin-top: 20px;
+    color: black;
+    font-size: 18px;
+    
+    /* NEW CODE */
+    
+    background: yellow;
+    border: 2px solid yellow;
+    border-radius: 50px;
+    box-shadow: 0 0 10px rgba(0, 0, 0 , .1);
+    font-size: 16px;
+    color: black;
+    letter-spacing: 1px;
+    text-decoration: none;
+    font-weight: 600;
+   
+   
+
+}
+.button:hover{
+        background: transparent;
+        color: yellow;
+        transition: 3s;
+}
+
+
+p{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.para{
+    text-align: center;
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+.para-2{
+    text-align: center;
+    /* color:white; */
+    font-size: 15px;
+    margin-top: -10px;
+
+}
+
+.para-2 a{
+    color:blue;
+    text-decoration: none;
+}
+
+.para-2 a:hover{
+    color: yellow;
+    transition: 3s;
+}
